@@ -11,6 +11,7 @@ bool flag;
 void explore(ll s){
 	visited[s]=true;
 	//cout<<"dfs="<<s<<endl;
+	// first comment
 	for(ll i=0;i<grp[s].size();i++){
 		if(visited[grp[s][i]]&&color[s]==color[grp[s][i]]){
 			flag=true;
