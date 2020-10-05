@@ -6,6 +6,7 @@ struct edge{
 int main(){
 	int n,m;
 	cin>>n>>m;
+	// taking inputs
 	vector<struct edge>ed(m);
 	int dist[n+1];
 	for(int i=1;i<=n;i++)
