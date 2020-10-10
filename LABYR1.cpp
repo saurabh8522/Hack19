@@ -4,7 +4,7 @@ struct node{
 	int r,c,dist;
 };
 int ro,co;
-char grid[1001][1001];
+char grid[10001][10001];
 bool visited[1001][1001];
 struct node lv;
 struct node bfs(struct node se){
@@ -81,6 +81,8 @@ int main(){
 		bfs(source);
 		for(int i=0;i<ro;i++){
 			for(int j=0;j<co;j++){
+				
+				
 				if(grid[i][j]=='#')
 					visited[i][j]=true;
 				else
@@ -91,7 +93,7 @@ int main(){
 		lv.dist=0;
 		bfs(lv);
 		//cout<<"after second="<<lv.r<<lv.c<<lv.dist<<endl;
-		cout<<"Maximum rope length is "<<lv.dist<<"."<<endl;
+		cout<<"Maximum length of the rope is "<<lv.dist<<"."<<endl;
 
 	}
 }
