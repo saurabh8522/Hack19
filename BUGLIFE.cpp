@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int n,m;
-bool visited[100001];
+bool visited[1001];
 int color[100001];
 #define ll long long int
 #define MOD 1000000007
@@ -69,10 +69,10 @@ int main(){
 		cout<<"Scenario #"<<c<<":"<<endl;
 		if(flag)
 		{
-			cout<<"Suspicious bugs found!"<<endl;
+			cout<<"Suspicious bugs are found!"<<endl;
 		}
 		else{
-			cout<<"No suspicious bugs found!"<<endl;
+			cout<<"No suspicious bugs are found!"<<endl;
 		}
 	}
 }
